@@ -10,7 +10,7 @@ Um dos diferenciais do Greenway é a certificação por meio de badges gerados a
 Essa validação não apenas reforça a reputação das empresas no mercado, mas também fortalece o relacionamento com os consumidores finais. 
 Ao criar novos canais de comunicação e aumentar a transparência, lealdade, preferência e confiança também são cultivadas junto ao público-alvo.
 
-[Link da apresentação](https://youtu.be/WJ93nQ6kmbc)
+[Link da apresentação](https://youtu.be/eGrA5A0sdb8)
 
 ##
 
