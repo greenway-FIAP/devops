@@ -1,6 +1,7 @@
 ![Greenway_TextGray](https://github.com/greenway-FIAP/csharp_api/assets/80494196/7b3ee4f3-373d-4aed-b459-d870cc122b77)
 
 ## Índice
+- [Índice](#índice)
 - [Sobre a Solução](#sobre-a-solução)
 - [Recursos da Plataforma](#recursos-da-plataforma)
   - [Análise de Dados](#análise-de-dados)
@@ -8,6 +9,7 @@
   - [Monitoramento Contínuo](#monitoramento-contínuo)
   - [Certificações](#certificações)
 - [Integrantes](#integrantes)
+- [Aplicação .NET](#aplicação-net)
 
 ## Sobre a Solução
 
@@ -37,6 +39,8 @@ As empresas que utilizam a plataforma recebem **certificações automáticas** e
 
 [Link da Apresentação](https://youtu.be/eGrA5A0sdb8)
 
+[Link do Video da API .NET em Azure Cloud](https://youtu.be/Lp7wHbP15LE)
+
 ## Integrantes
 
 - **RM99513** - Rodrigo Batista Freire - Java Advanced
@@ -44,3 +48,8 @@ As empresas que utilizam a plataforma recebem **certificações automáticas** e
 - **RM99466** - Marcelo Augusto de Mello Paixão - Development with .NET, DevOps & Cloud Computing e Quality Assurance
 - **RM97967** - Vinicius Oliveira de Almeida - Mastering Database
 - **RM98644** - Thiago Martins Bezerra - Disruptive Architectures (IA)
+
+## Aplicação .NET 
+
+[Link da Aplicação Funcional na Azure Cloud](https://api-greenway.azurewebsites.net/swagger/index.html)
+
