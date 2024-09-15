@@ -53,3 +53,166 @@ As empresas que utilizam a plataforma recebem **certificações automáticas** e
 
 [Link da Aplicação Funcional na Azure Cloud](https://api-greenway.azurewebsites.net/swagger/index.html)
 
+# API Endpoints
+
+## Address Controller
+- **GET** -> `/api/address` (Get All)
+- **GET** -> `/api/address/{id}` (Get by ID)
+- **POST** -> `/api/address` (Post)
+- **PUT** -> `/api/address/{id}` (Put)
+- **DELETE** -> `/api/address/{id}` (Delete)
+
+## Badge Controller
+- **GET** -> `/api/badge` (Get All)
+- **GET** -> `/api/badge/{id}` (Get by ID)
+- **POST** -> `/api/badge` (Post)
+- **PUT** -> `/api/badge/{id}` (Put)
+- **DELETE** -> `/api/badge/{id}` (Delete)
+
+## Badge Level Controller
+- **GET** -> `/api/badge-level` (Get All)
+- **GET** -> `/api/badge-level/{id}` (Get by ID)
+- **POST** -> `/api/badge-level` (Post)
+- **PUT** -> `/api/badge-level/{id}` (Put)
+- **DELETE** -> `/api/badge-level/{id}` (Delete)
+
+## Company Controller
+- **GET** -> `/api/company` (Get All)
+- **GET** -> `/api/company/{id}` (Get by ID)
+- **POST** -> `/api/company` (Post)
+- **PUT** -> `/api/company/{id}` (Put)
+- **DELETE** -> `/api/company/{id}` (Delete)
+
+## Company Representative Controller
+- **GET** -> `/api/company-representative` (Get All)
+- **GET** -> `/api/company-representative/{id}` (Get by ID)
+- **POST** -> `/api/company-representative` (Post)
+- **PUT** -> `/api/company-representative/{id}` (Put)
+- **DELETE** -> `/api/company-representative/{id}` (Delete)
+
+## Improvement Measurement Controller
+- **GET** -> `/api/improvement-measurement` (Get All)
+- **GET** -> `/api/improvement-measurement/{id}` (Get by ID)
+- **POST** -> `/api/improvement-measurement` (Post)
+- **PUT** -> `/api/improvement-measurement/{id}` (Put)
+- **DELETE** -> `/api/improvement-measurement/{id}` (Delete)
+
+## Measurement Controller
+- **GET** -> `/api/measurement` (Get All)
+- **GET** -> `/api/measurement/{id}` (Get by ID)
+- **POST** -> `/api/measurement` (Post)
+- **PUT** -> `/api/measurement/{id}` (Put)
+- **DELETE** -> `/api/measurement/{id}` (Delete)
+
+## Measurement Process Step Controller
+- **GET** -> `/api/measurement-process-step` (Get All)
+- **GET** -> `/api/measurement-process-step/{id}` (Get by ID)
+- **POST** -> `/api/measurement-process-step` (Post)
+- **PUT** -> `/api/measurement-process-step/{id}` (Put)
+- **DELETE** -> `/api/measurement-process-step/{id}` (Delete)
+
+## Measurement Type Controller
+- **GET** -> `/api/measurement-type` (Get All)
+- **GET** -> `/api/measurement-type/{id}` (Get by ID)
+- **POST** -> `/api/measurement-type` (Post)
+- **PUT** -> `/api/measurement-type/{id}` (Put)
+- **DELETE** -> `/api/measurement-type/{id}` (Delete)
+
+## Process Controller
+- **GET** -> `/api/process` (Get All)
+- **GET** -> `/api/process/{id}` (Get by ID)
+- **POST** -> `/api/process` (Post)
+- **PUT** -> `/api/process/{id}` (Put)
+- **DELETE** -> `/api/process/{id}` (Delete)
+
+## Process Badge Controller
+- **GET** -> `/api/process-badge` (Get All)
+- **GET** -> `/api/process-badge/{id}` (Get by ID)
+- **POST** -> `/api/process-badge` (Post)
+- **PUT** -> `/api/process-badge/{id}` (Put)
+- **DELETE** -> `/api/process-badge/{id}` (Delete)
+
+## Process Resource Controller
+- **GET** -> `/api/process-resource` (Get All)
+- **GET** -> `/api/process-resource/{id}` (Get by ID)
+- **POST** -> `/api/process-resource` (Post)
+- **PUT** -> `/api/process-resource/{id}` (Put)
+- **DELETE** -> `/api/process-resource/{id}` (Delete)
+
+## Process Step Controller
+- **GET** -> `/api/process-step` (Get All)
+- **GET** -> `/api/process-step/{id}` (Get by ID)
+- **POST** -> `/api/process-step` (Post)
+- **PUT** -> `/api/process-step/{id}` (Put)
+- **DELETE** -> `/api/process-step/{id}` (Delete)
+
+## Product Controller
+- **GET** -> `/api/product` (Get All)
+- **GET** -> `/api/product/{id}` (Get by ID)
+- **POST** -> `/api/product` (Post)
+- **PUT** -> `/api/product/{id}` (Put)
+- **DELETE** -> `/api/product/{id}` (Delete)
+
+## Product Type Controller
+- **GET** -> `/api/product-type` (Get All)
+- **GET** -> `/api/product-type/{id}` (Get by ID)
+- **POST** -> `/api/product-type` (Post)
+- **PUT** -> `/api/product-type/{id}` (Put)
+- **DELETE** -> `/api/product-type/{id}` (Delete)
+
+## Resource Controller
+- **GET** -> `/api/resource` (Get All)
+- **GET** -> `/api/resource/{id}` (Get by ID)
+- **POST** -> `/api/resource` (Post)
+- **PUT** -> `/api/resource/{id}` (Put)
+- **DELETE** -> `/api/resource/{id}` (Delete)
+
+## Resource Type Controller
+- **GET** -> `/api/resource-type` (Get All)
+- **GET** -> `/api/resource-type/{id}` (Get by ID)
+- **POST** -> `/api/resource-type` (Post)
+- **PUT** -> `/api/resource-type/{id}` (Put)
+- **DELETE** -> `/api/resource-type/{id}` (Delete)
+
+## Sector Controller
+- **GET** -> `/api/sector` (Get All)
+- **GET** -> `/api/sector/{id}` (Get by ID)
+- **POST** -> `/api/sector` (Post)
+- **PUT** -> `/api/sector/{id}` (Put)
+- **DELETE** -> `/api/sector/{id}` (Delete)
+
+## Step Controller
+- **GET** -> `/api/step` (Get All)
+- **GET** -> `/api/step/{id}` (Get by ID)
+- **POST** -> `/api/step` (Post)
+- **PUT** -> `/api/step/{id}` (Put)
+- **DELETE** -> `/api/step/{id}` (Delete)
+
+## Sustainable Goal Controller
+- **GET** -> `/api/sustainable-goal` (Get All)
+- **GET** -> `/api/sustainable-goal/{id}` (Get by ID)
+- **POST** -> `/api/sustainable-goal` (Post)
+- **PUT** -> `/api/sustainable-goal/{id}` (Put)
+- **DELETE** -> `/api/sustainable-goal/{id}` (Delete)
+
+## Sustainable Improvement Actions Controller
+- **GET** -> `/api/sustainable-improvement-actions` (Get All)
+- **GET** -> `/api/sustainable-improvement-actions/{id}` (Get by ID)
+- **POST** -> `/api/sustainable-improvement-actions` (Post)
+- **PUT** -> `/api/sustainable-improvement-actions/{id}` (Put)
+- **DELETE** -> `/api/sustainable-improvement-actions/{id}` (Delete)
+
+## User Controller
+- **GET** -> `/api/user` (Get All)
+- **GET** -> `/api/user/{id}` (Get by ID)
+- **POST** -> `/api/user/register` (Post)
+- **POST** -> `/api/user/login` (Post)
+- **PUT** -> `/api/user/{id}` (Put)
+- **DELETE** -> `/api/user/{id}` (Delete)
+
+## User Type Controller
+- **GET** -> `/api/user-type` (Get All)
+- **GET** -> `/api/user-type/{id}` (Get by ID)
+- **POST** -> `/api/user-type` (Post)
+- **PUT** -> `/api/user-type/{id}` (Put)
+- **DELETE** -> `/api/user-type/{id}` (Delete)
