@@ -1,9 +1,5 @@
 ![Greenway_TextGray](https://github.com/greenway-FIAP/csharp_api/assets/80494196/7b3ee4f3-373d-4aed-b459-d870cc122b77)
 
-# Documentação da API - Greenway
-
-Esta documentação descreve a plataforma **Greenway**, uma solução SaaS desenvolvida para auxiliar empresas a alcançarem metas de sustentabilidade, otimizando processos e gerando benefícios econômicos por meio de uma IA generativa avançada.
-
 ## Índice
 - [Sobre a Solução](#sobre-a-solução)
 - [Recursos da Plataforma](#recursos-da-plataforma)
