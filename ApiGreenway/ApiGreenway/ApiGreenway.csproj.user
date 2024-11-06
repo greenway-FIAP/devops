@@ -2,6 +2,5 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\Users\MarceloAmp\Documents\FIAP\csharp_api\ApiGreenway\ApiGreenway\Properties\PublishProfiles\api-greenway - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

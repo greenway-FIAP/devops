@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\csharp_api\\ApiGreenway\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|c:\\users\\marceloamp\\documents\\fiap\\technos\\challenge\\sprint 4\\csharp_api\\apigreenway\\apigreenway\\greenway-firebase.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|solutionrelative:apigreenway\\greenway-firebase.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|c:\\users\\marceloamp\\documents\\fiap\\technos\\challenge\\sprint 4\\csharp_api\\apigreenway\\apigreenway\\services\\authentication\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|solutionrelative:apigreenway\\services\\authentication\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|c:\\users\\marceloamp\\documents\\fiap\\technos\\challenge\\sprint 4\\csharp_api\\apigreenway\\apigreenway\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|solutionrelative:apigreenway\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|c:\\users\\marceloamp\\documents\\fiap\\technos\\challenge\\sprint 4\\csharp_api\\apigreenway\\apigreenway\\services\\authentication\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|solutionrelative:apigreenway\\services\\authentication\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|c:\\users\\marceloamp\\documents\\fiap\\technos\\challenge\\sprint 4\\csharp_api\\apigreenway\\apigreenway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3C5CE13-03C5-4DA2-AF0E-9B8015DC2B5E}|ApiGreenway\\ApiGreenway.csproj|solutionrelative:apigreenway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -17,11 +38,71 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "greenway-firebase.json",
+              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\greenway-firebase.json",
+              "RelativeDocumentMoniker": "ApiGreenway\\greenway-firebase.json",
+              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\greenway-firebase.json",
+              "RelativeToolTip": "ApiGreenway\\greenway-firebase.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-03T23:44:45.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ApiGreenway\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ApiGreenway\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAUwNoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T22:00:11.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\Services\\Authentication\\AuthService.cs",
+              "RelativeDocumentMoniker": "ApiGreenway\\Services\\Authentication\\AuthService.cs",
+              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\Services\\Authentication\\AuthService.cs",
+              "RelativeToolTip": "ApiGreenway\\Services\\Authentication\\AuthService.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAqwO0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T21:59:42.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\Services\\Authentication\\IAuthService.cs",
+              "RelativeDocumentMoniker": "ApiGreenway\\Services\\Authentication\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\Services\\Authentication\\IAuthService.cs",
+              "RelativeToolTip": "ApiGreenway\\Services\\Authentication\\IAuthService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwCEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T22:55:02.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\Program.cs",
+              "RelativeDocumentMoniker": "ApiGreenway\\Program.cs",
+              "ToolTip": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\Program.cs",
+              "RelativeToolTip": "ApiGreenway\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADwv1gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T21:41:14.339Z"
             }
           ]
         }

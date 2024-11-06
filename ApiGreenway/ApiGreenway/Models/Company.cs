@@ -19,13 +19,10 @@ public class Company
     [StringLength(14)]
     public required string nr_cnpj { get; set; }
 
-    [JsonIgnore]
     public DateTimeOffset dt_created_at { get; set; } = DateTimeOffset.UtcNow.ToOffset(TimeSpan.FromHours(-3)); // UTC-3 Brasília
 
-    [JsonIgnore]
     public DateTimeOffset? dt_updated_at { get; set; }
 
-    [JsonIgnore]
     public DateTimeOffset? dt_finished_at { get; set; }
 
     // Relationships

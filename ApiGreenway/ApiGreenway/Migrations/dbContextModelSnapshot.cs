@@ -821,6 +821,10 @@ namespace ApiGreenway.Migrations
                         .IsRequired()
                         .HasColumnType("NVARCHAR2(2000)");
 
+                    b.Property<string>("ds_uid_fb")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
+
                     b.Property<DateTimeOffset>("dt_created_at")
                         .HasColumnType("TIMESTAMP(7) WITH TIME ZONE");
 

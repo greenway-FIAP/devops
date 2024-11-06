@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("6f3d4cab-ed00-4aed-b8bb-96d7026c1bfc")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiGreenway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09dc569d172023b7c9072d14c6a9ae6eba5f0af7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1c1cb1ef649fcc7ac505367fec0bf854af15227")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiGreenway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiGreenway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

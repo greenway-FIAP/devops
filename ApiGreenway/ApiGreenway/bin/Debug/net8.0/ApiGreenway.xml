@@ -1,0 +1,1322 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiGreenway</name>
+    </assembly>
+    <members>
+        <member name="M:ApiGreenway.Controllers.AddressController.GetAddresses">
+            <summary>
+            Obtém todos os endereços.
+            </summary>
+            <returns>Uma lista de endereços.</returns>
+            <response code="200">Retorna a lista de endereços</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.AddressController.GetAddressById(System.Int32)">
+            <summary>
+            Obtém um endereço pelo ID.
+            </summary>
+            <param name="addressId">O ID do endereço.</param>
+            <returns>Um endereço específico.</returns>
+            <response code="200">Retorna o endereço com o ID fornecido</response>
+            <response code="404">Se o endereço não for encontrado</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.AddressController.CreateAddress(ApiGreenway.Models.Address)">
+            <summary>
+            Cria um novo endereço.
+            </summary>
+            <param name="address">Os dados do endereço a ser criado.</param>
+            <returns>O endereço criado.</returns>
+            <response code="201">Retorna o endereço criado</response>
+            <response code="400">Se os dados do endereço forem inválidos</response>
+            <response code="500">Erro ao adicionar dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.AddressController.UpdateAddress(System.Int32,ApiGreenway.Models.Address)">
+            <summary>
+            Atualiza um endereço existente.
+            </summary>
+            <param name="addressId">O ID do endereço a ser atualizado.</param>
+            <param name="address">Os novos dados do endereço.</param>
+            <returns>O endereço atualizado.</returns>
+            <response code="200">Retorna o endereço atualizado</response>
+            <response code="404">Se o endereço não for encontrado</response>
+            <response code="400">Se os dados do endereço forem inválidos</response>
+            <response code="500">Erro ao atualizar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.AddressController.DeleteAddress(System.Int32)">
+            <summary>
+            Deleta um endereço pelo ID.
+            </summary>
+            <param name="addressId">O ID do endereço a ser deletado.</param>
+            <returns>Mensagem de confirmação da exclusão.</returns>
+            <response code="200">Retorna uma mensagem de sucesso</response>
+            <response code="404">Se o endereço não for encontrado</response>
+            <response code="500">Erro ao deletar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeController.GetBadges">
+            <summary>
+            Obtém todos os badges.
+            </summary>
+            <returns>Uma lista de badges.</returns>
+            <response code="200">Retorna a lista de badges</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeController.GetBadgeById(System.Int32)">
+            <summary>
+            Obtém um badge pelo ID.
+            </summary>
+            <param name="badgeId">O ID do badge.</param>
+            <returns>Um badge específico.</returns>
+            <response code="200">Retorna o badge com o ID fornecido</response>
+            <response code="404">Se o badge não for encontrado</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeController.CreateBadge(ApiGreenway.Models.Badge)">
+            <summary>
+            Cria um novo badge.
+            </summary>
+            <param name="badge">Os dados do badge a ser criado.</param>
+            <returns>O badge criado.</returns>
+            <response code="201">Retorna o badge criado</response>
+            <response code="400">Se os dados do badge forem inválidos</response>
+            <response code="500">Erro ao adicionar dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeController.UpdateBadge(System.Int32,ApiGreenway.Models.Badge)">
+            <summary>
+            Atualiza um badge existente.
+            </summary>
+            <param name="badgeId">O ID do badge a ser atualizado.</param>
+            <param name="badge">Os novos dados do badge.</param>
+            <returns>O badge atualizado.</returns>
+            <response code="200">Retorna o badge atualizado</response>
+            <response code="404">Se o badge não for encontrado</response>
+            <response code="400">Se os dados do badge forem inválidos</response>
+            <response code="500">Erro ao atualizar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeController.DeleteBadge(System.Int32)">
+            <summary>
+            Deleta um badge pelo ID.
+            </summary>
+            <param name="badgeId">O ID do badge a ser deletado.</param>
+            <returns>Mensagem de confirmação da exclusão.</returns>
+            <response code="200">Retorna uma mensagem de sucesso</response>
+            <response code="404">Se o badge não for encontrado</response>
+            <response code="500">Erro ao deletar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeLevelController.GetBadgeLevels">
+            <summary>
+            Obtém todos os níveis de badge.
+            </summary>
+            <returns>Uma lista de níveis de badge.</returns>
+            <response code="200">Retorna a lista de níveis de badge</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeLevelController.GetBadgeLevelById(System.Int32)">
+            <summary>
+            Obtém um nível de badge pelo ID.
+            </summary>
+            <param name="badgeLevelId">O ID do nível de badge.</param>
+            <returns>Um nível de badge específico.</returns>
+            <response code="200">Retorna o nível de badge com o ID fornecido</response>
+            <response code="404">Se o nível de badge não for encontrado</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeLevelController.CreateBadgeLevel(ApiGreenway.Models.BadgeLevel)">
+            <summary>
+            Cria um novo nível de badge.
+            </summary>
+            <param name="badgeLevel">Os dados do nível de badge a ser criado.</param>
+            <returns>O nível de badge criado.</returns>
+            <response code="201">Retorna o nível de badge criado</response>
+            <response code="400">Se os dados do nível de badge forem inválidos</response>
+            <response code="500">Erro ao adicionar dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeLevelController.UpdateBadgeLevel(System.Int32,ApiGreenway.Models.BadgeLevel)">
+            <summary>
+            Atualiza um nível de badge existente.
+            </summary>
+            <param name="badgeLevelId">O ID do nível de badge a ser atualizado.</param>
+            <param name="badgeLevel">Os novos dados do nível de badge.</param>
+            <returns>O nível de badge atualizado.</returns>
+            <response code="200">Retorna o nível de badge atualizado</response>
+            <response code="404">Se o nível de badge não for encontrado</response>
+            <response code="400">Se os dados do nível de badge forem inválidos</response>
+            <response code="500">Erro ao atualizar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.BadgeLevelController.DeleteBadgeLevel(System.Int32)">
+            <summary>
+            Deleta um nível de badge pelo ID.
+            </summary>
+            <param name="badgeLevelId">O ID do nível de badge a ser deletado.</param>
+            <returns>Mensagem de confirmação da exclusão.</returns>
+            <response code="200">Retorna uma mensagem de sucesso</response>
+            <response code="404">Se o nível de badge não for encontrado</response>
+            <response code="500">Erro ao deletar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyController.GetCompanies">
+            <summary>
+            Obtém todas as empresas.
+            </summary>
+            <returns>Uma lista de empresas.</returns>
+            <response code="200">Retorna a lista de empresas</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyController.GetCompanyById(System.Int32)">
+            <summary>
+            Obtém uma empresa pelo ID.
+            </summary>
+            <param name="companyId">O ID da empresa.</param>
+            <returns>Uma empresa específica.</returns>
+            <response code="200">Retorna a empresa com o ID fornecido</response>
+            <response code="404">Se a empresa não for encontrada</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyController.CreateCompany(ApiGreenway.Models.Company)">
+            <summary>
+            Cria uma nova empresa.
+            </summary>
+            <param name="company">Os dados da empresa a ser criada.</param>
+            <returns>A empresa criada.</returns>
+            <response code="201">Retorna a empresa criada</response>
+            <response code="400">Se os dados da empresa forem inválidos</response>
+            <response code="500">Erro ao salvar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyController.UpdateCompany(System.Int32,ApiGreenway.Models.Company)">
+            <summary>
+            Atualiza uma empresa existente.
+            </summary>
+            <param name="companyId">O ID da empresa a ser atualizada.</param>
+            <param name="company">Os novos dados da empresa.</param>
+            <returns>A empresa atualizada.</returns>
+            <response code="200">Retorna a empresa atualizada</response>
+            <response code="404">Se a empresa não for encontrada</response>
+            <response code="400">Se os dados da empresa forem inválidos</response>
+            <response code="500">Erro ao atualizar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyController.DeleteCompany(System.Int32)">
+            <summary>
+            Deleta uma empresa pelo ID.
+            </summary>
+            <param name="companyId">O ID da empresa a ser deletada.</param>
+            <returns>Mensagem de confirmação da exclusão.</returns>
+            <response code="200">Retorna uma mensagem de sucesso</response>
+            <response code="404">Se a empresa não for encontrada</response>
+            <response code="500">Erro ao deletar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyRepresentativeController.GetCompanyRepresentatives">
+            <summary>
+            Obtém todos os representantes das empresas.
+            </summary>
+            <returns>Uma lista de representantes das empresas.</returns>
+            <response code="200">Retorna a lista de representantes das empresas</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyRepresentativeController.GetCompanyRepresentativeById(System.Int32)">
+            <summary>
+            Obtém um representante da empresa pelo ID.
+            </summary>
+            <param name="companyRepresentativeId">O ID do representante da empresa.</param>
+            <returns>Um representante da empresa específico.</returns>
+            <response code="200">Retorna o representante da empresa com o ID fornecido</response>
+            <response code="404">Se o representante da empresa não for encontrado</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyRepresentativeController.CreateCompanyRepresentative(ApiGreenway.Models.CompanyRepresentative)">
+            <summary>
+            Cria um novo representante da empresa.
+            </summary>
+            <param name="companyRepresentative">Os dados do representante da empresa a ser criado.</param>
+            <returns>O representante da empresa criado.</returns>
+            <response code="201">Retorna o representante da empresa criado</response>
+            <response code="400">Se os dados do representante da empresa forem inválidos</response>
+            <response code="500">Erro ao salvar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyRepresentativeController.UpdateCompanyRepresentative(System.Int32,ApiGreenway.Models.CompanyRepresentative)">
+            <summary>
+            Atualiza um representante da empresa existente.
+            </summary>
+            <param name="companyRepresentativeId">O ID do representante da empresa a ser atualizado.</param>
+            <param name="companyRepresentative">Os novos dados do representante da empresa.</param>
+            <returns>O representante da empresa atualizado.</returns>
+            <response code="200">Retorna o representante da empresa atualizado</response>
+            <response code="404">Se o representante da empresa não for encontrado</response>
+            <response code="400">Se os dados do representante da empresa forem inválidos</response>
+            <response code="500">Erro ao atualizar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.CompanyRepresentativeController.DeleteCompanyRepresentative(System.Int32)">
+            <summary>
+            Deleta um representante da empresa pelo ID.
+            </summary>
+            <param name="companyRepresentativeId">O ID do representante da empresa a ser deletado.</param>
+            <returns>Mensagem de confirmação da exclusão.</returns>
+            <response code="200">Retorna uma mensagem de sucesso</response>
+            <response code="404">Se o representante da empresa não for encontrado</response>
+            <response code="500">Erro ao deletar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ImprovementMeasurementController.GetImprovementMeasurements">
+            <summary>
+            Obtém todas as medições de melhoria.
+            </summary>
+            <returns>Uma lista de medições de melhoria.</returns>
+            <response code="200">Retorna a lista de medições de melhoria</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ImprovementMeasurementController.GetImprovementMeasurementById(System.Int32)">
+            <summary>
+            Obtém uma medição de melhoria pelo ID.
+            </summary>
+            <param name="improvementMeasurementId">O ID da medição de melhoria.</param>
+            <returns>Uma medição de melhoria específica.</returns>
+            <response code="200">Retorna a medição de melhoria com o ID fornecido</response>
+            <response code="404">Se a medição de melhoria não for encontrada</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ImprovementMeasurementController.CreateImprovementMeasurement(ApiGreenway.Models.ImprovementMeasurement)">
+            <summary>
+            Cria uma nova medição de melhoria.
+            </summary>
+            <param name="improvementMeasurement">Os dados da medição de melhoria a ser criada.</param>
+            <returns>A medição de melhoria criada.</returns>
+            <response code="201">Retorna a medição de melhoria criada</response>
+            <response code="400">Se os dados da medição de melhoria forem inválidos</response>
+            <response code="500">Erro ao adicionar dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ImprovementMeasurementController.UpdateImprovementMeasurement(System.Int32,ApiGreenway.Models.ImprovementMeasurement)">
+            <summary>
+            Atualiza uma medição de melhoria existente.
+            </summary>
+            <param name="improvementMeasurementId">O ID da medição de melhoria a ser atualizada.</param>
+            <param name="improvementMeasurement">Os novos dados da medição de melhoria.</param>
+            <returns>A medição de melhoria atualizada.</returns>
+            <response code="200">Retorna a medição de melhoria atualizada</response>
+            <response code="404">Se a medição de melhoria não for encontrada</response>
+            <response code="400">Se os dados da medição de melhoria forem inválidos</response>
+            <response code="500">Erro ao atualizar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ImprovementMeasurementController.DeleteImprovementMeasurement(System.Int32)">
+            <summary>
+            Deleta uma medição de melhoria pelo ID.
+            </summary>
+            <param name="improvementMeasurementId">O ID da medição de melhoria a ser deletada.</param>
+            <returns>Mensagem de confirmação da exclusão.</returns>
+            <response code="200">Retorna uma mensagem de sucesso</response>
+            <response code="404">Se a medição de melhoria não for encontrada</response>
+            <response code="500">Erro ao deletar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementController.GetMeasurements">
+            <summary>
+            Obtém todas as medições.
+            </summary>
+            <returns>Uma lista de medições.</returns>
+            <response code="200">Retorna a lista de medições</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementController.GetMeasurementById(System.Int32)">
+            <summary>
+            Obtém uma medição pelo ID.
+            </summary>
+            <param name="measurementId">O ID da medição.</param>
+            <returns>Uma medição específica.</returns>
+            <response code="200">Retorna a medição com o ID fornecido</response>
+            <response code="404">Se a medição não for encontrada</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementController.CreateMeasurement(ApiGreenway.Models.Measurement)">
+            <summary>
+            Cria uma nova medição.
+            </summary>
+            <param name="measurement">Os dados da medição a ser criada.</param>
+            <returns>A medição criada.</returns>
+            <response code="201">Retorna a medição criada</response>
+            <response code="400">Se os dados da medição forem inválidos</response>
+            <response code="500">Erro ao adicionar dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementController.UpdateMeasurement(System.Int32,ApiGreenway.Models.Measurement)">
+            <summary>
+            Atualiza uma medição existente.
+            </summary>
+            <param name="measurementId">O ID da medição a ser atualizada.</param>
+            <param name="measurement">Os novos dados da medição.</param>
+            <returns>A medição atualizada.</returns>
+            <response code="200">Retorna a medição atualizada</response>
+            <response code="404">Se a medição não for encontrada</response>
+            <response code="400">Se os dados da medição forem inválidos</response>
+            <response code="500">Erro ao atualizar dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementController.DeleteMeasurement(System.Int32)">
+            <summary>
+            Deleta uma medição pelo ID.
+            </summary>
+            <param name="measurementId">O ID da medição a ser deletada.</param>
+            <returns>Mensagem de confirmação da exclusão.</returns>
+            <response code="200">Retorna uma mensagem de sucesso</response>
+            <response code="404">Se a medição não for encontrada</response>
+            <response code="500">Erro ao deletar dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementProcessStepController.GetMeasurementProcessSteps">
+            <summary>
+            Obtém todos os passos do processo de medição.
+            </summary>
+            <returns>Uma lista de passos do processo de medição.</returns>
+            <response code="200">Retorna a lista de passos do processo de medição</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementProcessStepController.GetMeasurementProcessStepById(System.Int32)">
+            <summary>
+            Obtém um passo do processo de medição pelo ID.
+            </summary>
+            <param name="measurementProcessStepId">O ID do passo do processo de medição.</param>
+            <returns>Um passo do processo de medição específico.</returns>
+            <response code="200">Retorna o passo do processo de medição com o ID fornecido</response>
+            <response code="404">Se o passo do processo de medição não for encontrado</response>
+            <response code="500">Erro ao recuperar os dados do Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementProcessStepController.CreateMeasurementProcessStep(ApiGreenway.Models.MeasurementProcessStep)">
+            <summary>
+            Cria um novo passo do processo de medição.
+            </summary>
+            <param name="measurementProcessStep">Os dados do passo do processo de medição a ser criado.</param>
+            <returns>O passo do processo de medição criado.</returns>
+            <response code="201">Retorna o passo do processo de medição criado</response>
+            <response code="400">Se os dados do passo do processo de medição forem inválidos</response>
+            <response code="500">Erro ao salvar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementProcessStepController.UpdateMeasurementProcessStep(System.Int32,ApiGreenway.Models.MeasurementProcessStep)">
+            <summary>
+            Atualiza um passo do processo de medição existente.
+            </summary>
+            <param name="measurementProcessStepId">O ID do passo do processo de medição a ser atualizado.</param>
+            <param name="measurementProcessStep">Os novos dados do passo do processo de medição.</param>
+            <returns>O passo do processo de medição atualizado.</returns>
+            <response code="200">Retorna o passo do processo de medição atualizado</response>
+            <response code="404">Se o passo do processo de medição não for encontrado</response>
+            <response code="400">Se os dados do passo do processo de medição forem inválidos</response>
+            <response code="500">Erro ao atualizar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementProcessStepController.DeleteMeasurementProcessStep(System.Int32)">
+            <summary>
+            Deleta um passo do processo de medição pelo ID.
+            </summary>
+            <param name="measurementProcessStepId">O ID do passo do processo de medição a ser deletado.</param>
+            <returns>Mensagem de confirmação da exclusão.</returns>
+            <response code="200">Retorna uma mensagem de sucesso</response>
+            <response code="404">Se o passo do processo de medição não for encontrado</response>
+            <response code="500">Erro ao deletar os dados no Banco de Dados</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementTypeController.GetMeasurementTypes">
+            <summary>
+            Obtém todos os tipos de medição.
+            </summary>
+            <returns>Uma lista de tipos de medição.</returns>
+            <response code="200">Retorna a lista de tipos de medição.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementTypeController.GetMeasurementTypeById(System.Int32)">
+            <summary>
+            Obtém um tipo de medição pelo ID.
+            </summary>
+            <param name="measurementTypeId">O ID do tipo de medição.</param>
+            <returns>O tipo de medição correspondente ao ID.</returns>
+            <response code="200">Retorna o tipo de medição encontrado.</response>
+            <response code="404">Tipo de medição não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementTypeController.CreateMeasurementType(ApiGreenway.Models.MeasurementType)">
+            <summary>
+            Cria um novo tipo de medição.
+            </summary>
+            <param name="measurementType">O tipo de medição a ser criado.</param>
+            <returns>O tipo de medição criado.</returns>
+            <response code="201">Tipo de medição criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementTypeController.UpdateMeasurementType(System.Int32,ApiGreenway.Models.MeasurementType)">
+            <summary>
+            Atualiza um tipo de medição existente.
+            </summary>
+            <param name="measurementTypeId">O ID do tipo de medição a ser atualizado.</param>
+            <param name="measurementType">Os novos dados do tipo de medição.</param>
+            <returns>O tipo de medição atualizado.</returns>
+            <response code="200">Tipo de medição atualizado com sucesso.</response>
+            <response code="404">Tipo de medição não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.MeasurementTypeController.DeleteMeasurementType(System.Int32)">
+            <summary>
+            Deleta um tipo de medição pelo ID.
+            </summary>
+            <param name="measurementTypeId">O ID do tipo de medição a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Tipo de medição deletado com sucesso.</response>
+            <response code="404">Tipo de medição não encontrado.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessBadgeController.GetProcessBadges">
+            <summary>
+            Obtém todos os processos de badge.
+            </summary>
+            <returns>Uma lista de processos de badge.</returns>
+            <response code="200">Retorna a lista de processos de badge.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessBadgeController.GetProcessBadgeById(System.Int32)">
+            <summary>
+            Obtém um processo de badge pelo ID.
+            </summary>
+            <param name="processBadgeId">O ID do processo de badge.</param>
+            <returns>O processo de badge correspondente ao ID.</returns>
+            <response code="200">Retorna o processo de badge encontrado.</response>
+            <response code="404">Processo de badge não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessBadgeController.CreateProcessBadge(ApiGreenway.Models.ProcessBadge)">
+            <summary>
+            Cria um novo processo de badge.
+            </summary>
+            <param name="processBadge">O processo de badge a ser criado.</param>
+            <returns>O processo de badge criado.</returns>
+            <response code="201">Processo de badge criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessBadgeController.UpdateProcessBadge(System.Int32,ApiGreenway.Models.ProcessBadge)">
+            <summary>
+            Atualiza um processo de badge existente.
+            </summary>
+            <param name="processBadgeId">O ID do processo de badge a ser atualizado.</param>
+            <param name="processBadge">Os novos dados do processo de badge.</param>
+            <returns>O processo de badge atualizado.</returns>
+            <response code="200">Processo de badge atualizado com sucesso.</response>
+            <response code="404">Processo de badge não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar os dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessBadgeController.DeleteProcessBadge(System.Int32)">
+            <summary>
+            Deleta um processo de badge pelo ID.
+            </summary>
+            <param name="processBadgeId">O ID do processo de badge a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Processo de badge deletado com sucesso.</response>
+            <response code="404">Processo de badge não encontrado.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessController.GetProcesses">
+            <summary>
+            Obtém todos os processos.
+            </summary>
+            <returns>Uma lista de processos.</returns>
+            <response code="200">Retorna a lista de processos.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessController.GetProcessById(System.Int32)">
+            <summary>
+            Obtém um processo pelo ID.
+            </summary>
+            <param name="processId">O ID do processo.</param>
+            <returns>O processo correspondente ao ID.</returns>
+            <response code="200">Retorna o processo encontrado.</response>
+            <response code="404">Processo não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessController.CreateProcess(ApiGreenway.Models.Process)">
+            <summary>
+            Cria um novo processo.
+            </summary>
+            <param name="process">O processo a ser criado.</param>
+            <returns>O processo criado.</returns>
+            <response code="201">Processo criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessController.UpdateProcess(System.Int32,ApiGreenway.Models.Process)">
+            <summary>
+            Atualiza um processo existente.
+            </summary>
+            <param name="processId">O ID do processo a ser atualizado.</param>
+            <param name="process">Os novos dados do processo.</param>
+            <returns>O processo atualizado.</returns>
+            <response code="200">Processo atualizado com sucesso.</response>
+            <response code="404">Processo não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar os dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessController.DeleteProcess(System.Int32)">
+            <summary>
+            Deleta um processo pelo ID.
+            </summary>
+            <param name="processId">O ID do processo a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Processo deletado com sucesso.</response>
+            <response code="404">Processo não encontrado.</response>
+            <response code="500">Erro ao deletar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessResourceController.GetProcessResources">
+            <summary>
+            Obtém todos os recursos de processo.
+            </summary>
+            <returns>Uma lista de recursos de processo.</returns>
+            <response code="200">Retorna a lista de recursos de processo.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessResourceController.GetProcessResourceById(System.Int32)">
+            <summary>
+            Obtém um recurso de processo pelo ID.
+            </summary>
+            <param name="processResourceId">O ID do recurso de processo.</param>
+            <returns>O recurso de processo correspondente ao ID.</returns>
+            <response code="200">Retorna o recurso de processo encontrado.</response>
+            <response code="404">Recurso de processo não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessResourceController.CreateProcessResource(ApiGreenway.Models.ProcessResource)">
+            <summary>
+            Cria um novo recurso de processo.
+            </summary>
+            <param name="processResource">O recurso de processo a ser criado.</param>
+            <returns>O recurso de processo criado.</returns>
+            <response code="201">Recurso de processo criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessResourceController.UpdateProcessResource(System.Int32,ApiGreenway.Models.ProcessResource)">
+            <summary>
+            Atualiza um recurso de processo existente.
+            </summary>
+            <param name="processResourceId">O ID do recurso de processo a ser atualizado.</param>
+            <param name="processResource">Os novos dados do recurso de processo.</param>
+            <returns>O recurso de processo atualizado.</returns>
+            <response code="200">Recurso de processo atualizado com sucesso.</response>
+            <response code="404">Recurso de processo não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessResourceController.DeleteProcessResource(System.Int32)">
+            <summary>
+            Deleta um recurso de processo pelo ID.
+            </summary>
+            <param name="processResourceId">O ID do recurso de processo a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Recurso de processo deletado com sucesso.</response>
+            <response code="404">Recurso de processo não encontrado.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessStepController.GetProcessSteps">
+            <summary>
+            Obtém todas as etapas do processo.
+            </summary>
+            <returns>Uma lista de etapas do processo.</returns>
+            <response code="200">Retorna a lista de etapas do processo.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessStepController.GetProcessStepById(System.Int32)">
+            <summary>
+            Obtém uma etapa do processo pelo ID.
+            </summary>
+            <param name="processStepId">O ID da etapa do processo.</param>
+            <returns>A etapa do processo correspondente ao ID.</returns>
+            <response code="200">Retorna a etapa do processo encontrada.</response>
+            <response code="404">Etapa do processo não encontrada.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessStepController.CreateProcessStep(ApiGreenway.Models.ProcessStep)">
+            <summary>
+            Cria uma nova etapa do processo.
+            </summary>
+            <param name="processStep">A etapa do processo a ser criada.</param>
+            <returns>A etapa do processo criada.</returns>
+            <response code="201">Etapa do processo criada com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessStepController.UpdateProcessStep(System.Int32,ApiGreenway.Models.ProcessStep)">
+            <summary>
+            Atualiza uma etapa do processo existente.
+            </summary>
+            <param name="processStepId">O ID da etapa do processo a ser atualizada.</param>
+            <param name="processStep">Os novos dados da etapa do processo.</param>
+            <returns>A etapa do processo atualizada.</returns>
+            <response code="200">Etapa do processo atualizada com sucesso.</response>
+            <response code="404">Etapa do processo não encontrada.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProcessStepController.DeleteProcessStep(System.Int32)">
+            <summary>
+            Deleta uma etapa do processo pelo ID.
+            </summary>
+            <param name="processStepId">O ID da etapa do processo a ser deletada.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Etapa do processo deletada com sucesso.</response>
+            <response code="404">Etapa do processo não encontrada.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductController.GetProducts">
+            <summary>
+            Obtém todos os produtos.
+            </summary>
+            <returns>Uma lista de produtos.</returns>
+            <response code="200">Retorna a lista de produtos.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductController.GetProductById(System.Int32)">
+            <summary>
+            Obtém um produto pelo ID.
+            </summary>
+            <param name="productId">O ID do produto.</param>
+            <returns>O produto correspondente ao ID.</returns>
+            <response code="200">Retorna o produto encontrado.</response>
+            <response code="404">Produto não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductController.CreateProduct(ApiGreenway.Models.Product)">
+            <summary>
+            Cria um novo produto.
+            </summary>
+            <param name="product">O produto a ser criado.</param>
+            <returns>O produto criado.</returns>
+            <response code="201">Produto criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductController.UpdateProduct(System.Int32,ApiGreenway.Models.Product)">
+            <summary>
+            Atualiza um produto existente.
+            </summary>
+            <param name="productId">O ID do produto a ser atualizado.</param>
+            <param name="product">Os novos dados do produto.</param>
+            <returns>O produto atualizado.</returns>
+            <response code="200">Produto atualizado com sucesso.</response>
+            <response code="404">Produto não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductController.DeleteProduct(System.Int32)">
+            <summary>
+            Deleta um produto pelo ID.
+            </summary>
+            <param name="productId">O ID do produto a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Produto deletado com sucesso.</response>
+            <response code="404">Produto não encontrado.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductTypeController.GetProductTypes">
+            <summary>
+            Obtém todos os tipos de produtos.
+            </summary>
+            <returns>Uma lista de tipos de produtos.</returns>
+            <response code="200">Retorna a lista de tipos de produtos.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductTypeController.GetProductTypeById(System.Int32)">
+            <summary>
+            Obtém um tipo de produto pelo ID.
+            </summary>
+            <param name="productTypeId">O ID do tipo de produto.</param>
+            <returns>O tipo de produto correspondente ao ID.</returns>
+            <response code="200">Retorna o tipo de produto encontrado.</response>
+            <response code="404">Tipo de produto não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductTypeController.CreateProductType(ApiGreenway.Models.ProductType)">
+            <summary>
+            Cria um novo tipo de produto.
+            </summary>
+            <param name="productType">O tipo de produto a ser criado.</param>
+            <returns>O tipo de produto criado.</returns>
+            <response code="201">Tipo de produto criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductTypeController.UpdateProductType(System.Int32,ApiGreenway.Models.ProductType)">
+            <summary>
+            Atualiza um tipo de produto existente.
+            </summary>
+            <param name="productTypeId">O ID do tipo de produto a ser atualizado.</param>
+            <param name="productType">Os novos dados do tipo de produto.</param>
+            <returns>O tipo de produto atualizado.</returns>
+            <response code="200">Tipo de produto atualizado com sucesso.</response>
+            <response code="404">Tipo de produto não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ProductTypeController.DeleteProductType(System.Int32)">
+            <summary>
+            Deleta um tipo de produto pelo ID.
+            </summary>
+            <param name="productTypeId">O ID do tipo de produto a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Tipo de produto deletado com sucesso.</response>
+            <response code="404">Tipo de produto não encontrado.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceController.GetResources">
+            <summary>
+            Obtém todos os recursos.
+            </summary>
+            <returns>Uma lista de recursos.</returns>
+            <response code="200">Retorna a lista de recursos.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceController.GetResourceById(System.Int32)">
+            <summary>
+            Obtém um recurso pelo ID.
+            </summary>
+            <param name="resourceId">O ID do recurso.</param>
+            <returns>O recurso correspondente ao ID.</returns>
+            <response code="200">Retorna o recurso encontrado.</response>
+            <response code="404">Recurso não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceController.CreateResource(ApiGreenway.Models.Resource)">
+            <summary>
+            Cria um novo recurso.
+            </summary>
+            <param name="resource">O recurso a ser criado.</param>
+            <returns>O recurso criado.</returns>
+            <response code="201">Recurso criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceController.UpdateResource(System.Int32,ApiGreenway.Models.Resource)">
+            <summary>
+            Atualiza um recurso existente.
+            </summary>
+            <param name="resourceId">O ID do recurso a ser atualizado.</param>
+            <param name="resource">Os novos dados do recurso.</param>
+            <returns>O recurso atualizado.</returns>
+            <response code="200">Recurso atualizado com sucesso.</response>
+            <response code="404">Recurso não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceController.DeleteResource(System.Int32)">
+            <summary>
+            Deleta um recurso pelo ID.
+            </summary>
+            <param name="resourceId">O ID do recurso a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Recurso deletado com sucesso.</response>
+            <response code="404">Recurso não encontrado.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceTypeController.GetResourceTypes">
+            <summary>
+            Obtém todos os tipos de recursos.
+            </summary>
+            <returns>Uma lista de tipos de recursos.</returns>
+            <response code="200">Retorna a lista de tipos de recursos.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceTypeController.GetResourceTypeById(System.Int32)">
+            <summary>
+            Obtém um tipo de recurso pelo ID.
+            </summary>
+            <param name="resourceTypeId">O ID do tipo de recurso.</param>
+            <returns>O tipo de recurso correspondente ao ID.</returns>
+            <response code="200">Retorna o tipo de recurso encontrado.</response>
+            <response code="404">Tipo de recurso não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceTypeController.CreateResourceType(ApiGreenway.Models.ResourceType)">
+            <summary>
+            Cria um novo tipo de recurso.
+            </summary>
+            <param name="resourceType">O tipo de recurso a ser criado.</param>
+            <returns>O tipo de recurso criado.</returns>
+            <response code="201">Tipo de recurso criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceTypeController.UpdateResourceType(System.Int32,ApiGreenway.Models.ResourceType)">
+            <summary>
+            Atualiza um tipo de recurso existente.
+            </summary>
+            <param name="resourceTypeId">O ID do tipo de recurso a ser atualizado.</param>
+            <param name="resourceType">Os novos dados do tipo de recurso.</param>
+            <returns>O tipo de recurso atualizado.</returns>
+            <response code="200">Tipo de recurso atualizado com sucesso.</response>
+            <response code="404">Tipo de recurso não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.ResourceTypeController.DeleteResourceType(System.Int32)">
+            <summary>
+            Deleta um tipo de recurso pelo ID.
+            </summary>
+            <param name="resourceTypeId">O ID do tipo de recurso a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Tipo de recurso deletado com sucesso.</response>
+            <response code="404">Tipo de recurso não encontrado.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SectorController.GetSectors">
+            <summary>
+            Obtém todos os setores.
+            </summary>
+            <returns>Uma lista de setores.</returns>
+            <response code="200">Retorna a lista de setores.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SectorController.GetSectorById(System.Int32)">
+            <summary>
+            Obtém um setor pelo ID.
+            </summary>
+            <param name="sectorId">O ID do setor.</param>
+            <returns>O setor correspondente ao ID.</returns>
+            <response code="200">Retorna o setor encontrado.</response>
+            <response code="404">Setor não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SectorController.CreateSector(ApiGreenway.Models.Sector)">
+            <summary>
+            Cria um novo setor.
+            </summary>
+            <param name="sector">O setor a ser criado.</param>
+            <returns>O setor criado.</returns>
+            <response code="201">Setor criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SectorController.UpdateSector(System.Int32,ApiGreenway.Models.Sector)">
+            <summary>
+            Atualiza um setor existente.
+            </summary>
+            <param name="sectorId">O ID do setor a ser atualizado.</param>
+            <param name="sector">Os novos dados do setor.</param>
+            <returns>O setor atualizado.</returns>
+            <response code="200">Setor atualizado com sucesso.</response>
+            <response code="404">Setor não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SectorController.DeleteSector(System.Int32)">
+            <summary>
+            Deleta um setor pelo ID.
+            </summary>
+            <param name="sectorId">O ID do setor a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Setor deletado com sucesso.</response>
+            <response code="404">Setor não encontrado.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.StepController.GetSteps">
+            <summary>
+            Obtém todas as etapas.
+            </summary>
+            <returns>Uma lista de etapas.</returns>
+            <response code="200">Retorna a lista de etapas.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.StepController.GetStepById(System.Int32)">
+            <summary>
+            Obtém uma etapa pelo ID.
+            </summary>
+            <param name="stepId">O ID da etapa.</param>
+            <returns>A etapa correspondente ao ID.</returns>
+            <response code="200">Retorna a etapa encontrada.</response>
+            <response code="404">Etapa não encontrada.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.StepController.CreateStep(ApiGreenway.Models.Step)">
+            <summary>
+            Cria uma nova etapa.
+            </summary>
+            <param name="step">A etapa a ser criada.</param>
+            <returns>A etapa criada.</returns>
+            <response code="201">Etapa criada com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.StepController.UpdateStep(System.Int32,ApiGreenway.Models.Step)">
+            <summary>
+            Atualiza uma etapa existente.
+            </summary>
+            <param name="stepId">O ID da etapa a ser atualizada.</param>
+            <param name="step">Os novos dados da etapa.</param>
+            <returns>A etapa atualizada.</returns>
+            <response code="200">Etapa atualizada com sucesso.</response>
+            <response code="404">Etapa não encontrada.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.StepController.DeleteStep(System.Int32)">
+            <summary>
+            Deleta uma etapa pelo ID.
+            </summary>
+            <param name="stepId">O ID da etapa a ser deletada.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Etapa deletada com sucesso.</response>
+            <response code="404">Etapa não encontrada.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableGoalController.GetSustainableGoals">
+            <summary>
+            Obtém todas as metas sustentáveis.
+            </summary>
+            <returns>Uma lista de metas sustentáveis.</returns>
+            <response code="200">Retorna a lista de metas sustentáveis.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableGoalController.GetSustainableGoalById(System.Int32)">
+            <summary>
+            Obtém uma meta sustentável pelo ID.
+            </summary>
+            <param name="sustainableGoalId">O ID da meta sustentável.</param>
+            <returns>A meta sustentável correspondente ao ID.</returns>
+            <response code="200">Retorna a meta sustentável encontrada.</response>
+            <response code="404">Meta sustentável não encontrada.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableGoalController.CreateSustainableGoal(ApiGreenway.Models.SustainableGoal)">
+            <summary>
+            Cria uma nova meta sustentável.
+            </summary>
+            <param name="sustainableGoal">A meta sustentável a ser criada.</param>
+            <returns>A meta sustentável criada.</returns>
+            <response code="201">Meta sustentável criada com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableGoalController.UpdateSustainableGoal(System.Int32,ApiGreenway.Models.SustainableGoal)">
+            <summary>
+            Atualiza uma meta sustentável existente.
+            </summary>
+            <param name="sustainableGoalId">O ID da meta sustentável a ser atualizada.</param>
+            <param name="sustainableGoal">Os novos dados da meta sustentável.</param>
+            <returns>A meta sustentável atualizada.</returns>
+            <response code="200">Meta sustentável atualizada com sucesso.</response>
+            <response code="404">Meta sustentável não encontrada.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableGoalController.DeleteSustainableGoal(System.Int32)">
+            <summary>
+            Deleta uma meta sustentável pelo ID.
+            </summary>
+            <param name="sustainableGoalId">O ID da meta sustentável a ser deletada.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Meta sustentável deletada com sucesso.</response>
+            <response code="404">Meta sustentável não encontrada.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableImprovementActionsController.GetSustainableImprovementActions">
+            <summary>
+            Obtém todas as ações de melhoria sustentável.
+            </summary>
+            <returns>Uma lista de ações de melhoria sustentável.</returns>
+            <response code="200">Retorna a lista de ações de melhoria sustentável.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableImprovementActionsController.GetSustainableImprovementActionsById(System.Int32)">
+            <summary>
+            Obtém uma ação de melhoria sustentável pelo ID.
+            </summary>
+            <param name="sustainableImprovementActionsId">O ID da ação de melhoria sustentável.</param>
+            <returns>A ação de melhoria sustentável correspondente ao ID.</returns>
+            <response code="200">Retorna a ação de melhoria sustentável encontrada.</response>
+            <response code="404">Ação de melhoria sustentável não encontrada.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableImprovementActionsController.CreateSustainableImprovementActions(ApiGreenway.Models.SustainableImprovementActions)">
+            <summary>
+            Cria uma nova ação de melhoria sustentável.
+            </summary>
+            <param name="sustainableImprovementActions">A ação de melhoria sustentável a ser criada.</param>
+            <returns>A ação de melhoria sustentável criada.</returns>
+            <response code="201">Ação de melhoria sustentável criada com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableImprovementActionsController.UpdateSustainableImprovementActions(System.Int32,ApiGreenway.Models.SustainableImprovementActions)">
+            <summary>
+            Atualiza uma ação de melhoria sustentável existente.
+            </summary>
+            <param name="sustainableImprovementActionsId">O ID da ação a ser atualizada.</param>
+            <param name="sustainableImprovementActions">Os novos dados da ação de melhoria sustentável.</param>
+            <returns>A ação de melhoria sustentável atualizada.</returns>
+            <response code="200">Ação de melhoria sustentável atualizada com sucesso.</response>
+            <response code="404">Ação de melhoria sustentável não encontrada.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.SustainableImprovementActionsController.DeleteSustainableImprovementActions(System.Int32)">
+            <summary>
+            Deleta uma ação de melhoria sustentável pelo ID.
+            </summary>
+            <param name="sustainableImprovementActionsId">O ID da ação a ser deletada.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Ação de melhoria sustentável deletada com sucesso.</response>
+            <response code="404">Ação de melhoria sustentável não encontrada.</response>
+            <response code="500">Erro ao deletar dados no banco de dados.</response>
+        </member>
+        <member name="T:ApiGreenway.Controllers.UserController">
+            <summary>
+            Controlador para a entidade User.
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.#ctor(ApiGreenway.Repository.Interface.IUserRepository,ApiGreenway.Services.Authentication.IAuthService)">
+            <summary>
+            Construtor para a classe UserController.
+            </summary>
+            <param name="userRepository">Repositório de usuários.</param>
+            <param name="authService">Serviço de autenticação.</param>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.Login(ApiGreenway.Models.Dtos.UserLoginDTO)">
+            <summary>
+            Faz login de um usuário.
+            </summary>
+            <param name="request">Os dados do usuário a ser autenticado.</param>
+            <returns>Um token JWT se o login for bem-sucedido.</returns>
+            <response code="200">Login bem-sucedido.</response>
+            <response code="400">E-mail ou senha inválidos.</response>
+            <response code="500">Erro ao realizar login.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.GetUsers">
+            <summary>
+            Obtém todos os usuários.
+            </summary>
+            <returns>Uma lista de usuários.</returns>
+            <response code="200">Retorna a lista de usuários.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.GetUserById(System.Int32)">
+            <summary>
+            Obtém um usuário pelo ID.
+            </summary>
+            <param name="userId">O ID do usuário a ser recuperado.</param>
+            <returns>O usuário correspondente ao ID.</returns>
+            <response code="200">Retorna o usuário encontrado.</response>
+            <response code="404">Usuário não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.Register(ApiGreenway.Models.Dtos.UserRegisterDTO)">
+            <summary>
+            Registra um novo usuário.
+            </summary>
+            <param name="request">Os dados do usuário a ser registrado.</param>
+            <returns>O UID do usuário criado.</returns>
+            <response code="201">Usuário criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.UpdateUser(System.String,ApiGreenway.Models.Dtos.UserUpdateDto)">
+            <summary>
+            Atualiza um usuário existente.
+            </summary>
+            <param name="oldEmail">O e-mail antigo do usuário a ser atualizado.</param>
+            <param name="request">Os novos dados do usuário.</param>
+            <returns>O usuário atualizado.</returns>
+            <response code="200">Usuário atualizado com sucesso.</response>
+            <response code="404">Usuário não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar os dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.DeleteUser(System.Int32)">
+            <summary>
+            Deleta um usuário pelo ID.
+            </summary>
+            <param name="userId">O ID do usuário a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Usuário desativado com sucesso.</response>
+            <response code="404">Usuário não encontrado.</response>
+            <response code="500">Erro ao deletar o usuário do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.ReactiveUser(System.Int32)">
+            <summary>
+            Reativa um usuário pelo ID.
+            </summary>
+            <param name="userId">O ID do usuário a ser reativado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Usuário reativado com sucesso.</response>
+            <response code="404">Usuário não encontrado.</response>
+            <response code="500">Erro ao reativar o usuário do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserController.ForgotPassword(System.String)">
+            <summary>
+            Redefine a senha pelo E-mail
+            </summary>
+            <param name="actualEmail">O E-mail do usuário a ser enviado o link de redefinição.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Link Enviado com sucesso.</response>
+            <response code="404">Usuário não encontrado.</response>
+            <response code="500">Erro ao enviar e-mail de redefinição de senha.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserTypeController.GetUserTypes">
+            <summary>
+            Obtém todos os tipos de usuário.
+            </summary>
+            <returns>Uma lista de tipos de usuário.</returns>
+            <response code="200">Retorna a lista de tipos de usuário.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserTypeController.GetUserTypeById(System.Int32)">
+            <summary>
+            Obtém um tipo de usuário pelo ID.
+            </summary>
+            <param name="userTypeId">O ID do tipo de usuário.</param>
+            <returns>O tipo de usuário correspondente ao ID.</returns>
+            <response code="200">Retorna o tipo de usuário encontrado.</response>
+            <response code="404">Tipo de usuário não encontrado.</response>
+            <response code="500">Erro ao recuperar os dados do banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserTypeController.CreateUserType(ApiGreenway.Models.UserType)">
+            <summary>
+            Cria um novo tipo de usuário.
+            </summary>
+            <param name="userType">O tipo de usuário a ser criado.</param>
+            <returns>O tipo de usuário criado.</returns>
+            <response code="201">Tipo de usuário criado com sucesso.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao adicionar dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserTypeController.UpdateUserType(System.Int32,ApiGreenway.Models.UserType)">
+            <summary>
+            Atualiza um tipo de usuário existente.
+            </summary>
+            <param name="userTypeId">O ID do tipo de usuário a ser atualizado.</param>
+            <param name="userType">Os novos dados do tipo de usuário.</param>
+            <returns>O tipo de usuário atualizado.</returns>
+            <response code="200">Tipo de usuário atualizado com sucesso.</response>
+            <response code="404">Tipo de usuário não encontrado.</response>
+            <response code="400">Dados inválidos.</response>
+            <response code="500">Erro ao atualizar os dados no banco de dados.</response>
+        </member>
+        <member name="M:ApiGreenway.Controllers.UserTypeController.DeleteUserType(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário pelo ID.
+            </summary>
+            <param name="userTypeId">O ID do tipo de usuário a ser deletado.</param>
+            <returns>Uma mensagem de sucesso.</returns>
+            <response code="200">Tipo de usuário deletado com sucesso.</response>
+            <response code="404">Tipo de usuário não encontrado.</response>
+            <response code="500">Erro ao deletar os dados do banco de dados.</response>
+        </member>
+        <member name="T:ApiGreenway.Migrations.V1_AddTables">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiGreenway.Migrations.V1_AddTables.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiGreenway.Migrations.V1_AddTables.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ApiGreenway.Migrations.V1_AddTables.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ApiGreenway.Models.User">
+            <summary>
+            Tabela de usuários
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.id_user">
+            <summary>
+            Identificador do usuário
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.ds_uid_fb">
+            <summary>
+            Identificador único do usuário no Facebook
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.ds_email">
+            <summary>
+            E-mail do usuário
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.ds_password">
+            <summary>
+            Senha do usuário
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.dt_created_at">
+            <summary>
+            Data e hora de criação do usuário
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.dt_updated_at">
+            <summary>
+            Data e hora de atualização do usuário
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.dt_finished_at">
+            <summary>
+            Data e hora de finalização do usuário
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.id_user_type">
+            <summary>
+            Identificador do tipo de usuário
+            </summary>
+        </member>
+        <member name="P:ApiGreenway.Models.User.id_company_representative">
+            <summary>
+            Identificador do Cadastro deste Usuário
+            </summary>
+        </member>
+        <member name="T:ApiGreenway.Services.Authentication.AuthService">
+            <summary>
+            Serviço de Autenticação.
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.AuthService.#ctor(System.Net.Http.HttpClient,ApiGreenway.Data.dbContext)">
+            <summary>
+            Construtor que recebe o HttpClient e o dbContext
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.AuthService.LoginAsync(ApiGreenway.Models.Dtos.UserLoginDTO)">
+            <inheritdoc/>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.AuthService.RegisterAsync(ApiGreenway.Models.Dtos.UserRegisterDTO)">
+            <inheritdoc/>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.AuthService.UpdateUserByEmailAsync(System.String,ApiGreenway.Models.Dtos.UserUpdateDto)">
+            <inheritdoc/>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.AuthService.DeleteAsync(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.AuthService.ReactiveUserAsync(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="T:ApiGreenway.Services.Authentication.IAuthService">
+            <summary>
+            Interface para o serviço de autenticação.
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.IAuthService.RegisterAsync(ApiGreenway.Models.Dtos.UserRegisterDTO)">
+            <summary>
+            Serviço de Registrar usuário.
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.IAuthService.LoginAsync(ApiGreenway.Models.Dtos.UserLoginDTO)">
+            <summary>
+            Serviço de Logar usuário.
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.IAuthService.UpdateUserByEmailAsync(System.String,ApiGreenway.Models.Dtos.UserUpdateDto)">
+            <summary>
+            Serviço de Atualizar usuário.
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.IAuthService.DeleteAsync(System.Int32)">
+            <summary>
+            Serviço de Deletar usuário.
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.IAuthService.ReactiveUserAsync(System.Int32)">
+            <summary>
+            Serviço de Reativar usuário.
+            </summary>
+        </member>
+        <member name="M:ApiGreenway.Services.Authentication.IAuthService.ForgotPasswordUserAsync(System.String)">
+            <summary>
+            Serviço de Recuperar a Senha
+            </summary>
+        </member>
+    </members>
+</doc>

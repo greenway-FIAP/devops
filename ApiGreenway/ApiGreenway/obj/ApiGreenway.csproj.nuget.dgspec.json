@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MarceloAmp\\Documents\\FIAP\\csharp_api\\ApiGreenway\\ApiGreenway\\ApiGreenway.csproj": {}
+    "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\ApiGreenway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MarceloAmp\\Documents\\FIAP\\csharp_api\\ApiGreenway\\ApiGreenway\\ApiGreenway.csproj": {
+    "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\ApiGreenway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\csharp_api\\ApiGreenway\\ApiGreenway\\ApiGreenway.csproj",
+        "projectUniqueName": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\ApiGreenway.csproj",
         "projectName": "ApiGreenway",
-        "projectPath": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\csharp_api\\ApiGreenway\\ApiGreenway\\ApiGreenway.csproj",
+        "projectPath": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\ApiGreenway.csproj",
         "packagesPath": "C:\\Users\\MarceloAmp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\csharp_api\\ApiGreenway\\ApiGreenway\\obj\\",
+        "outputPath": "C:\\Users\\MarceloAmp\\Documents\\FIAP\\Technos\\Challenge\\Sprint 4\\csharp_api\\ApiGreenway\\ApiGreenway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -68,13 +72,25 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Oracle.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.21.140, )"
             },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[112.1.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.7.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
             }
           },
           "imports": [

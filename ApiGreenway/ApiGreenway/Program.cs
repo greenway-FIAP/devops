@@ -1,6 +1,9 @@
 using ApiGreenway.Data;
 using ApiGreenway.Repository;
 using ApiGreenway.Repository.Interface;
+using ApiGreenway.Services.Authentication;
+using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -16,6 +19,17 @@ builder.Services.AddDbContext<dbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"))
            .LogTo(Console.WriteLine, LogLevel.Information)
 );
+
+FirebaseApp.Create(new AppOptions
+{
+    Credential = GoogleCredential.FromFile("greenway-firebase.json")
+});
+
+builder.Services.AddHttpClient<IAuthService, AuthService>((sp, httpClient) =>
+{
+    var configuration = sp.GetRequiredService<IConfiguration>();
+    httpClient.BaseAddress = new Uri(configuration["Authentication:TokenUri"]!);
+});
 
 builder.Services.AddScoped<IAddressRepository, AddressRepository>();
 builder.Services.AddScoped<IBadgeRepository, BadgeRepository>();
@@ -66,12 +80,9 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseDeveloperExceptionPage();
+app.UseSwagger();
+app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "GreenwayAPI"));
 
 app.UseHttpsRedirection();
 

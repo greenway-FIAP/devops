@@ -52,4 +52,3 @@ As empresas que utilizam a plataforma recebem **certificações automáticas** e
 ## Aplicação .NET 
 
 [Link da Aplicação Funcional na Azure Cloud](https://api-greenway.azurewebsites.net/swagger/index.html)
-
