@@ -37,9 +37,19 @@ O progresso das empresas em direção às suas metas de sustentabilidade é **mo
 
 As empresas que utilizam a plataforma recebem **certificações automáticas** em formato de badges. Essas certificações atestam o comprometimento da empresa com práticas sustentáveis, fortalecendo sua reputação no mercado e sua relação com os consumidores.
 
+## Links Úteis
+
 [Link da Apresentação](https://youtu.be/eGrA5A0sdb8)
 
-[Link do Video da API .NET em Azure Cloud](https://youtu.be/Lp7wHbP15LE)
+[Link do Video da API .NET em Azure Cloud - (Sprint 3)](https://youtu.be/Lp7wHbP15LE)
+
+----
+
+[Organização do Azure DevOps](https://dev.azure.com/RM99466/Technos_Challenge_DevOps)
+
+[Link do Vídeo da Aplicação no Azure DevOps - (Sprint 4 - Pipeline)](https://youtu.be/rPkEn4gdNeA)
+
+[Aplicação Funcional na Web com Azure DevOps - (Sprint 4 - Pipeline)](https://dotnetapi-greenway.azurewebsites.net/swagger/index.html)
 
 ## Integrantes
 
